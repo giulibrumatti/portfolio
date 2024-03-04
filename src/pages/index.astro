@@ -1,47 +1,39 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
-import LinkedIn from '../components/icons/LinkedIn.astro';
-import GitHub from '../components/icons/GitHub.astro';
+import Layout from "../layouts/Layout.astro"
+import SectionContainer from "../components/Section.astro"
+import Experience from "../components/Experience.astro"
+import Briefcase from "../components/icons/Briefcase.astro"
+import CodeIcon from "../components/icons/Code.astro"
+import Projects from "../components/Projects.astro"
+import Hero from "@/components/Hero.astro"
+import { basics } from "@cv"
+const { name } = basics
 ---
 
-<Layout title="Portfolio de Giuliano">
-	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
-			<img class="rounded-full w-20 h-22" src="./public/gbphoto.png" alt="Giuliano photo">
-			<h1 class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-4">
-				Hola, soy Giuliano 
-				<a href="https://www.linkedin.com/in/giuliano-nicolas-brumatti-820295187/" 
-				target="_blank" rel="noopener" class="flex justify-center items-center">
-				<Badge>Disponible para trabajar</Badge>
-				</a>
-			</h1>
-			<h2 class="text-2xl opacity-80 text-wrap">
-			<span class="text-yellow-200/90">Desarrollador de software</span> en pleno crecimiento. 
-				Apasionado por la tecnología. Actualmente, estoy cursando la tecnicatura 
-				universitaria en programación y buscando dar mis primeros pasos en el mundo IT. 
-				Además, continúo aprendiendo de manera autodidacta a través de distintas 
-				plataformas. 
-			</h2>
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/in/giuliano-nicolas-brumatti-820295187/">
-						LinkedIn
-						<LinkedIn></Linkedin>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						GitHub
-						<GitHub></GitHub>
-					</a>
-				</li>
-			</ul>
-		</section>
-	</main>
+<Layout
+  title="Porfolio de Giuliano - Desarrollador Java"
+  description="Desarrollador Java - Programador Web"
+>
+  <main class="px-4">
+    
+    <SectionContainer class="py-44 pb-32">
+      <Hero></Hero>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Briefcase class="size-7" />
+         Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+         Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
 </Layout>
-
-<style>
-
-
-</style>

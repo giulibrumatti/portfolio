@@ -1,0 +1,53 @@
+---
+import { basics } from "@cv"
+const { name, label, image, email, phone, url, profiles } = basics
+import Badge from "./Badge.astro"
+import SocialPill from "./SocialPill.astro"
+import LinkedIn from "./icons/LinkedIn.astro"
+import Mail from "./icons/Mail.astro"
+import GitHub from "./icons/GitHub.astro"
+---
+
+<div class="max-w-xl">
+  <img
+  class="rounded-full size-14 mb-4"
+  src={image}
+  alt="giuliano photo"
+/>
+<h1
+  class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+>
+  Hola, soy {name} <a
+    href= "https://www.linkedin.com/in/giuliano-nicolas-brumatti-820295187/"
+    target="_blank"
+    rel="noopener"
+    class="flex justify-center items-center"
+  >
+    <Badge>Disponible para trabajar</Badge>
+  </a>
+</h1>
+<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+  <span>Desarrollador Java Backend.</span><span class="text-yellow-200/90">
+    Desarrollador Web.</span
+  >
+   <span class="text-red-200/90"> De Argentina</span>.
+  <span class="opacity-75"
+    >Aprendiendo sin limites.</span
+  >
+</h2>
+
+<nav class="flex gap-4 mt-8 flex-wrap">
+  <SocialPill href="https://www.linkedin.com/in/giuliano-nicolas-brumatti-820295187/">
+    <LinkedIn class="size-4 md:size-6" />
+     LinkedIn
+  </SocialPill>
+  <SocialPill href="https://github.com/giulibrumatti">
+    <GitHub class="size-4 md:size-6" />
+     GitHub
+  </SocialPill>
+  <SocialPill href="giulibrumatti97@gmail.com">
+    <Mail class="size-4 md:size-6" />
+     Contactar
+  </SocialPill>
+</nav>
+</div>

@@ -1,0 +1,14 @@
+---
+import ExperienceItem from "./ExperienceItems.astro";
+import { work } from "@cv";
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+    {
+        work.map((experiencie) => (
+          <li class="">
+            <ExperienceItem {...experiencie} />
+          </li>
+        ))
+      }
+  </ol>

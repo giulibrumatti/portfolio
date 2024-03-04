@@ -1,0 +1,153 @@
+
+
+{
+    "basics": {
+      "name": "Giuliano Nicolas Brumatti",
+      "label": "Trainee Full Stack Developer",
+      "image": "/imggb.webp",
+      "email": "giulibrumatti97@gmail.com",
+      "phone": "541135772893",
+      "url": "",
+      "summary": "Desarrollador de software en pleno crecimiento. Apasionado por la tecnología. Actualmente, estoy cursando la tecnicatura universitaria en programación y buscando dar mis primeros pasos en el mundo IT. Además, continúo aprendiendo de manera autodidacta a través de distintas plataformas.",
+      "location": {
+        "address": "",
+        "postalCode": "1682",
+        "city": "Villa Bosch",
+        "countryCode": "AR",
+        "region": "Argentina"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "Giuliano Nicolas Brumatti",
+          "url": "https://www.linkedin.com/in/giuliano-nicolas-brumatti-820295187/"
+        },
+        {
+          "network": "GitHub",
+          "username": "giulibrumatti",
+          "url": "https://github.com/giulibrumatti"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "Rombo del tejar",
+        "position": "Programador Web",
+        "url": "https://rombodeltejar-web-github-io-gbrumattis-projects.vercel.app/",
+        "startDate": "2023",
+        "endDate": "Actualidad",
+        "summary": "Desarrollé una página web estática para una casa de repuestos, utilizando tecnologías como HTML, CSS y Bootstrap. El objetivo era hacer una presentación del negocio y concentrar en un mismo sitio todos los métodos de contacto."
+      },
+      {
+        "name": "HRissan",
+        "position": "Programador Web",
+        "url": "https://www.hrissan.com.ar",
+        "startDate": "2024",
+        "endDate": "Actualidad",
+        "summary": "Desarrollé una página web estática para una consultora de recursos humanos, utilizando tecnologías como HTML, CSS, Bootstrap y Javascript. El objetivo era brindar información sobre su propuesta, propósito y la presentación de los CEO de la empresa. Además, brindar todos los medios de contacto."
+      }
+    ],
+    "education": [{
+      "institution": "Universidad Nacional de Hurlingham",
+      "url": "https://unahur.edu.ar",
+      "area": "Tecnicatura en programación",
+      "startDate": "2022",
+      "state": "En curso"
+    },
+    {
+      "institution": "TodoCode Academy",
+      "url": "https://todocodeacademy.com/",
+      "area": "HTML y CSS desde cero",
+      "startDate": "2023",
+      "state": "Finalizado"
+    },
+    {
+      "institution": "Platzi",
+      "url": "https://platzi.com/",
+      "area": "Frontend Developer",
+      "startDate": "2023",
+      "state": "Finalizado" 
+    },
+    {
+      "institution": "Platzi",
+      "url": "https://platzi.com/",
+      "area": "Bootstrap",
+      "startDate": "2023",
+      "state": "Finalizado" 
+    },
+    {
+      "institution": "TodoCode Academy",
+      "url": "https://todocodeacademy.com/",
+      "area": "Introducción a Git y GitHub",
+      "startDate": "2023",
+      "state": "Finalizado" 
+    },
+    {
+      "institution": "TodoCode Academy",
+      "url": "https://todocodeacademy.com/",
+      "area": "Introducción a las bases de datos",
+      "startDate": "2023",
+      "state": "Finalizado" 
+    }
+    ],
+    "skills": [
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "Boostrap"
+      },
+      {
+        "name": "Astro"
+      },
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "Java"
+      },
+      {
+        "name": "MySQL"
+      },
+      {
+        "name": "Git"
+      },
+      {
+        "name": "GitHub"
+      }
+    ],
+    "languages": [
+      {
+        "language": "Spanish",
+        "fluency": "Native speaker"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Rombo del tejar",
+        "image": "/rombodeltejar.webp",
+        "isActive": true, 
+        "description": "Landing Page",
+        "highlights": [
+          "HTML", "CSS", "Boostrap"
+        ],
+        "url": "https://rombodeltejar.vercel.app/",
+        "github": ""
+      },
+
+      {
+        "name": "HRissan",
+        "image": "/hrissan.webp",
+        "isActive": true,
+        "description": "Landing Page",
+        "highlights": [
+          "HTML", "CSS", "Boostrap", "JavaScript"
+        ],
+        "url": "https://www.hrissan.com.ar/"
+      }
+    ]  
+  }
+

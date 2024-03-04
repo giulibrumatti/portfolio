@@ -1,48 +1,70 @@
 ---
-import '@fontsource-variable/onest';
-import Header from '../components/Header.astro';
+import "@fontsource-variable/onest"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
 interface Props {
-	title: string;
+  title: string
+  description: string
 }
-
-const { title } = Astro.props;
-
-
+const { description, title } = Astro.props
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<div class="relative h-full w-full bg-slate-950">
-			<div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
 
-		<Header></Header>
-		<slot />
-			</div>
-		</div>
-	</body>
+  <body class="relative text-black dark:text-white px-4">
+    <div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
+      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
+      dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
 </html>
+
 <style is:global>
-	:root {
-		color-scheme: light dark;
-	}
-	html {
-		font-family:'Onest Variable', system-ui, sans-serif;
+  :root {
+    color-scheme: light dark;
 
-	}
+  }
 
-	body {
-		display: flex;
-		flex-direction: column;
-		height: 100vh;
-	}
+  html {
+    font-family: "Onest Variable", system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overscroll-behavior: none;
+      }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+        body {
+          color: rgba(255, 255, 255, 0.9);
+        }
+  }
+
+  #header-nav {
+        animation: blur linear both 0.5s;
+        animation-timeline: scroll();
+        animation-range: 0 500px;
+  }
+  
 
 </style>
